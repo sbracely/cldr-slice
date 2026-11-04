@@ -17,7 +17,7 @@ public class Main {
     }
 
     static int run(String[] args) {
-        Path source = Path.of("cldr", "cldr-common-48.2", "common");
+        Path source = Path.of("cldr", "cldr-common-49", "common");
         Path output = Path.of("properties");
         try {
             for (int i = 0; i < args.length; i++) {

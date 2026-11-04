@@ -5,7 +5,7 @@
 
 ## 运行
 
-需要 JDK 25 和 Maven。将 CLDR 48.2 解压到 `cldr\cldr-common-48.2`，
+需要 JDK 25 和 Maven。将 CLDR 49 解压到 `cldr\cldr-common-49`，
 在项目根目录运行，或在 IDEA 中运行 `io.github.sbracely.Main`：
 
 ```powershell

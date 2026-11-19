@@ -142,6 +142,8 @@ public final class CldrSlicer {
                         + "[not(@alt)][not(@scope)]", new HashSet<>());
         // CLDR display names use the identifier as code fallback when root has no name.
         values.put("name", calendarName == null ? "chinese" : calendarName);
+        values.put("era.1", require(locale,
+                "/ldml/dates/calendars/calendar[@type='gregorian']/eras/eraAbbr/era[@type='1']"));
         for (int month = 1; month <= 12; month++) {
             values.put("month." + month, require(locale,
                     CALENDARS + "[@type='chinese']/months"

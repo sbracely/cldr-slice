@@ -27,6 +27,6 @@ ResourceBundle bundle = ResourceBundle.getBundle("chinese-calendar", Locale.CHIN
 String month = bundle.getString("month.1");
 ```
 
-属性：`name`、`month.1`～`12`、`month.narrow.1`～`12`、
+属性：`name`、`era.1`、`month.1`～`12`、`month.narrow.1`～`12`、
 `month.leapPattern`、`solarTerm.1`～`24`、`sexagenary.1`～`60`、
 `zodiac.1`～`12`。

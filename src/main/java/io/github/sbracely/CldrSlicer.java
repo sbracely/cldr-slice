@@ -150,12 +150,6 @@ public final class CldrSlicer {
                             + "/monthContext[@type='format']/monthWidth[@type='wide']"
                             + "/month[@type='" + month + "'][not(@yeartype)][not(@alt)]"));
         }
-        for (int month = 1; month <= 12; month++) {
-            values.put("month.narrow." + month, require(locale,
-                    CALENDARS + "[@type='chinese']/months"
-                            + "/monthContext[@type='format']/monthWidth[@type='narrow']"
-                            + "/month[@type='" + month + "'][not(@yeartype)][not(@alt)]"));
-        }
         values.put("month.leapPattern", require(locale,
                 CALENDARS + "[@type='chinese']/monthPatterns/monthPatternContext[@type='format']"
                         + "/monthPatternWidth[@type='wide']/monthPattern[@type='leap']"));

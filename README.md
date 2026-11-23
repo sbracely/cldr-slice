@@ -1,6 +1,6 @@
 # cldr-slice
 
-将 CLDR 农历数据裁剪为 UTF-8 properties，包含历法名称、月份及极简名称、
+将 CLDR 农历数据裁剪为 UTF-8 properties，包含历法名称、月份、
 闰月模板、二十四节气、六十干支和十二生肖。
 
 ## 运行
@@ -27,6 +27,6 @@ ResourceBundle bundle = ResourceBundle.getBundle("chinese-calendar", Locale.CHIN
 String month = bundle.getString("month.1");
 ```
 
-属性：`name`、`era.1`、`month.1`～`12`、`month.narrow.1`～`12`、
+属性：`name`、`era.1`、`month.1`～`12`、
 `month.leapPattern`、`solarTerm.1`～`24`、`sexagenary.1`～`60`、
 `zodiac.1`～`12`。
